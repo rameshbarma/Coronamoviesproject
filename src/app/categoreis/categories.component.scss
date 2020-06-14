@@ -1,0 +1,18 @@
+.card-continer{
+    display: flex;
+   
+   }
+  .example-card{
+      background: transparent;
+      color: rgba($color: #ffffff, $alpha: 0.8); border-radius: 0px;
+     
+  }
+
+  .frist-box{
+    -webkit-box-flex: 0;
+    flex: 0 0 22.3333333333%;
+    max-width: 22.3333333333%;
+     background-color: #1c212e;
+     
+
+}

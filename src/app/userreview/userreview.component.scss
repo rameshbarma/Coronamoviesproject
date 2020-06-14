@@ -1,0 +1,56 @@
+.reviw-mat {
+  display: flex;
+}
+.reviw-mat span {
+  display: flex;
+  flex-direction: column;
+}
+
+.reviw-mat {
+  display: flex;
+  & .user {
+    display: flex;
+    width: 120px;
+    margin-right: 20px;
+    justify-content: center;
+    background: rgba(255,255,255,0.1);
+    border-radius: 4px;
+    min-height: 120px;
+    align-items: center;
+    cursor: pointer;
+    & > span{
+        font-size: 5em;
+    }
+  }
+  & .content {
+    display: flex;
+    flex: 1 1 auto;
+    flex-direction: column;
+    & .title {
+      display: flex;
+      margin: 20px 0;
+      font-size: 12px;
+      font-weight: 400;
+      opacity: 0.8;
+      & span {
+        margin-right: 10px;
+        font-size: 14px;
+        font-weight: 600;
+        color: #68c0ff;
+      }
+    }
+    & .star-component {
+      display: flex;
+    }
+  }
+}
+
+.actions {
+  display: flex;
+  margin: 20px 0;
+  & * {
+    display: flex;
+    align-items: center;
+    margin: 0 10px;
+  }
+}

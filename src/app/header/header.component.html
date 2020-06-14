@@ -1,0 +1,15 @@
+<mat-toolbar>
+    <div class="logo">Corona</div>
+    <app-nav></app-nav>
+    <div>
+
+        <button mat-button [matMenuTriggerFor]="menu">
+            <mat-icon aria-hidden="false" aria-label="Example account_circle icon">account_circle</mat-icon>
+        </button>
+        <mat-menu #menu="matMenu">
+            <button mat-menu-item>Profile</button>
+            <button mat-menu-item [routerLink]="['/login']" routerLinkActive="router-link-active" >Sing out</button>
+        </mat-menu>
+
+    </div>
+</mat-toolbar>

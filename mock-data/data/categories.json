@@ -1,0 +1,81 @@
+{
+  "total": 10,
+  "data": [
+    {
+      "id": 28,
+      "title": "Action"
+    },
+    {
+      "id": 12,
+      "title": "Adventure"
+    },
+    {
+      "id": 16,
+      "title": "Animation"
+    },
+    {
+      "id": 4,
+      "title": "Biography"
+    },
+    {
+      "id": 35,
+      "title": "Comedy"
+    },
+    {
+      "id": 6,
+      "title": "Crime"
+    },
+    {
+      "id": 7,
+      "title": "Documentary"
+    },
+    {
+      "id": 18,
+      "title": "Drama"
+    },
+    {
+      "id": 20,
+      "title": "Family"
+    },
+    {
+      "id": 14,
+      "title": "Fantacy"
+    },
+    {
+      "id": 11,
+      "title": "History"
+    },
+    {
+      "id": 27,
+      "title": "Horror"
+    },
+    {
+      "id": 13,
+      "title": "Music"
+    },
+    {
+      "id": 14,
+      "title": "Mystery"
+    },
+    {
+      "id": 15,
+      "title": "Mystrey"
+    },
+    {
+      "id": 16,
+      "title": "Romance"
+    },
+    {
+      "id": 17,
+      "title": "Sci - Fi"
+    },
+    {
+      "id": 18,
+      "title": "Sport"
+    },
+    {
+      "id": 53,
+      "title": "Thiller"
+    }
+  ]
+}

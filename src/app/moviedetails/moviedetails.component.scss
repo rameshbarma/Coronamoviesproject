@@ -1,0 +1,40 @@
+.mat-tab-group {
+    margin-bottom: 48px;
+    color: #ffffff;
+  }
+  .example-card{
+      display: flex;
+      background: transparent;
+      color: rgba(255, 255,255, 0.9);
+  }
+  .example-card div{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    margin: 20px;
+    padding: 20px;
+}
+.example-card div{
+    display: block !important;
+}
+.movie__meta{
+    padding: 0px !important;
+   
+}
+.movie__meta span {
+    border-right: #ffffff solid 1px; 
+  padding:0 20px;
+   display: inline-block;
+   text-align:center
+    
+}
+.movie__meta span:nth-child(1){
+    padding-left:0px ;
+}
+.movie__meta span:last-child{
+    border-right: none;
+}
+.reviw-cont{
+    margin: 20px;
+    padding: 20px;
+}

@@ -1,0 +1,28 @@
+<mat-tab-group mat-align-tabs="start">
+    <mat-tab label="Description">
+        <mat-card class="example-card" *ngIf="movie">
+            <div class="frist-block"> <img mat-card-image
+                    src="http://image.tmdb.org/t/p/w342/{{ movie.poster_path }}"
+                    alt="Photo of a Shiba Inu"></div>
+            <div class="secomd-block">
+                <mat-card-header>
+                    <!-- <div mat-card-avatar class="example-header-image"></div> -->
+                    <mat-card-title>{{movie.title}}</mat-card-title>
+                </mat-card-header>
+
+               <app-rating></app-rating>
+                    <div class="movie__meta">
+                        <span> {{Categories(movie.genres)}}</span><span>30min</span><span>TV-MA</span><span>Action, Mystery</span></div>
+               
+              
+            </div>
+        </mat-card>
+    </mat-tab>
+    <mat-tab label="Review">
+        <div class="reviw-cont">
+            <h1>Users Reviews</h1>
+            <app-userreview></app-userreview>
+
+        </div>
+    </mat-tab>
+</mat-tab-group>
