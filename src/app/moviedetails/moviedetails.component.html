@@ -13,15 +13,15 @@
                <app-rating></app-rating>
                     <div class="movie__meta">
                         <span> {{Categories(movie.genres)}}</span><span>30min</span><span>TV-MA</span><span>Action, Mystery</span></div>
-               
-              
+              <div class="movie-data">{{movie.overview}}</div>
+              <app-star-rating rating="3" [editable]="true" (onRatingChange)="ratingChange($event)"></app-star-rating>
             </div>
         </mat-card>
     </mat-tab>
     <mat-tab label="Review">
         <div class="reviw-cont">
             <h1>Users Reviews</h1>
-            <app-userreview></app-userreview>
+            <app-userreview ></app-userreview>
 
         </div>
     </mat-tab>

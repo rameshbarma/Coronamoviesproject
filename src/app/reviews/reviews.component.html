@@ -1,0 +1,25 @@
+<div class="user_review"  *ngFor="let review of reviews">
+    <div class="reviw-mat">
+        <div class="user image">
+            <span class="material-icons">
+                account_circle
+            </span>
+        </div>
+        <div class="content" >
+            <div class="title">
+                <span>{{review.name}}</span>{{review.reviewTime}}
+            </div>
+            <app-star-rating [rating]="review.overall" ></app-star-rating>
+            <div>{{review.content}}</div>
+        </div>
+    </div>
+    <div class="actions">
+        <div>{{review.overall}} star</div>
+        <div>
+            <span class="material-icons">
+                thumb_up_alt
+            </span>
+            <span>{{review.unixReviewTime}}</span>
+        </div>
+    </div>
+</div>

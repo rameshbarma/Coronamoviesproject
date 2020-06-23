@@ -11,7 +11,8 @@ import { MovieDataService } from '../categoreis/catagories.service';
 export class MovielistComponent implements OnInit, OnChanges {
   movies: any = [];
   filters: any = this.categoriesServices.getCategories();
-  originalData: any = []
+  originalData: any = [];
+
 
   constructor(
     private movielistdataservice: MovieListService,

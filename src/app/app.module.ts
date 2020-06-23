@@ -18,7 +18,7 @@ import {MatButtonToggleModule} from '@angular/material/button-toggle';
 import {MatCardModule} from '@angular/material/card';
 import {MatGridListModule} from '@angular/material/grid-list';
 import {MatTabsModule} from '@angular/material/tabs';
-
+import { MatSnackBarModule } from '@angular/material/snack-bar';
 
 
 
@@ -30,6 +30,7 @@ import { MovielistComponent } from './movielist/movielist.component';
 import { MoviesComponent} from './categoreis/categories.component'
 import {MatCheckboxModule} from '@angular/material/checkbox';
 import { MoviedetailsComponent } from './moviedetails/moviedetails.component';
+import { ReviewsComponent } from './reviews/reviews.component';
 
 // services
 import { MovieDataService} from './categoreis/catagories.service';
@@ -37,6 +38,9 @@ import { RatingComponent } from './rating/rating.component';
 import { UserreviewComponent } from './userreview/userreview.component';
 import {  MovieListService } from './movielist/movieslist.service';
 import { FilterPipe } from './movielist/filter.pipe';
+import {ReviewsService } from './reviews/reviews.services';
+import { StarRatingComponent } from './star-rating/star-rating.component';
+
 
 
 
@@ -61,7 +65,9 @@ import { FilterPipe } from './movielist/filter.pipe';
     MoviedetailsComponent,
     RatingComponent,
     UserreviewComponent,
-    FilterPipe
+    FilterPipe,
+    ReviewsComponent,
+    StarRatingComponent
   ],
   imports: [
     BrowserModule,
@@ -79,11 +85,12 @@ import { FilterPipe } from './movielist/filter.pipe';
     MatGridListModule,
     MatCheckboxModule,
     MatTabsModule,
-    HttpClientModule
+    HttpClientModule,
+    MatSnackBarModule
     
     
   ],
-  providers: [MovieDataService, MovieListService],
+  providers: [MovieDataService, MovieListService, ReviewsService],
   bootstrap: [AppComponent]
 })
 export class AppModule { }

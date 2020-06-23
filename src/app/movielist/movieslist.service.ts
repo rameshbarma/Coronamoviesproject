@@ -8,6 +8,7 @@ import { HttpClient } from '@angular/common/http';
 })
 export class MovieListService {
   moviesdata = '/api/movies-list';
+  
  
   // config = new Observable(s=>{
   //     s.next(this.data)
